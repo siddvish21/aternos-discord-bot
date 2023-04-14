@@ -1,6 +1,7 @@
-# Aternos Discord Bot
+# Aternos (Minecraft servers) Discord Bot
 
 You can use this bot to start your minecraft server, get the server status, get the number of players online, and more.
+More Details : https://aternos.org/:en/
 
 ## Getting Started
 
