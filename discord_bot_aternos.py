@@ -13,7 +13,7 @@ client = discord.Client(intents=intents)
 async def on_ready():
   print('Bot is ready.')
 
-# Event triggered when a message is received
+
 @client.event
 async def on_message(message):
   
