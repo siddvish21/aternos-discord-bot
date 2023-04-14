@@ -1,6 +1,6 @@
 # Aternos Discord Bot
 
-This is a simple Discord bot that interacts with your Aternos server. You can use this bot to start and stop your server, get the server status, get the number of players online, and more.
+You can use this bot to start and stop your server, get the server status, get the number of players online, and more.
 
 ## Getting Started
 
