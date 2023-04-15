@@ -3,6 +3,8 @@ import discord
 from python_aternos import Client
 from python_aternos import Status
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Set up Discord client with message PRIVILEGED intents enabled in DEVELOPER PORTAL
 intents = discord.Intents(messages=True)
@@ -18,7 +20,7 @@ async def on_ready():
 async def on_message(message):
   
   # Fill in your ATERNOS CREDENTIALS in here
-  api = Client.from_credentials('', '')
+  api = Client.from_credentials(os.getenv('USERNAME'), os.getenv('PASSWORD'))
 
   # Get list of Aternos servers and select the first one
   servers = api.list_servers()
@@ -64,4 +66,4 @@ async def on_message(message):
     await message.channel.send(server.address)
 
 #Enter the discord token below.
-client.run('')
+client.run(os.getenv('TOKEN'))
