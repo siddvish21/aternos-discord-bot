@@ -9,7 +9,7 @@ More Details : https://aternos.org/:en/
 2. Install the required libraries using `pip install -r requirements.txt`.
 3. Create a Discord bot and get the bot token from the Discord Developer Portal.
 4. Enable messages in privileged intents for your bot.
-5. Fill in your Aternos credentials in the `on_message` function of the `bot.py` file.
+5. Fill in your Aternos credentials in the env file in the USERNAME and PASSWORD fields
 6. Start the bot using `python bot.py`.
 
 ## Usage
