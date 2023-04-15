@@ -1,2 +1,3 @@
 discord.py
 python_aternos
+python-dotenv
