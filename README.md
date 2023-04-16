@@ -21,7 +21,7 @@ More Details : https://aternos.org/:en/
 - `!playercount`: Gets the number of players online on the Aternos server.
 - `!playerlist`: Gets the list of players online on the Aternos server.
 - `!serveraddress`: Gets the address of the Aternos server.
--`!help`:Shows list of all available commands
+- `!help`:Shows list of all available commands
 
 ### Notes
 
