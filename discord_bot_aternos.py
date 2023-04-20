@@ -27,7 +27,7 @@ async def on_ready():
 async def on_message(message):
 
     # Fill in your ATERNOS CREDENTIALS in env file
-    api = Client.from_credentials(os.getenv('USERNAME'), os.getenv('PASSWORD'))
+    api = Client.from_credentials(os.getenv('ATERNOS_USERNAME'), os.getenv('ATERNOS_PASSWORD'))
 
     # Get list of Aternos servers and select the first one
     servers = api.list_servers()
