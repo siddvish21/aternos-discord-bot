@@ -12,11 +12,15 @@ More Details : https://aternos.org/:en/
 5. Fill in your Aternos credentials in the env file in the ATERNOS_USERNAME and ATERNOS_PASSWORD fields
 6. Start the bot using `python bot.py`.
 
-First Start by creating an aternos account or login to an existing one if you have.Then create a server as follows:
+First Start by creating an aternos account or login to an existing one
+
+![](https://github.com/siddvish21/assets/blob/main/login_aternos.gif)
+
+Then create a minecraft server for you
+
 ![](https://github.com/siddvish21/assets/blob/main/How_to_create_server.gif)
 
 Next login to discord developer portal and then go to this link https://discord.com/developers/applications
-
 
 Create a new application like this:
 
@@ -29,9 +33,11 @@ After that go and get the bot token as follows and **paste it in the env file in
 
 
 To invite the bot to your discord server you need to generate a url as follows in the gif
+
 ![](https://github.com/siddvish21/assets/blob/main/url_generate_discord-bot.gif)
 
 Paste the url in the webbrowser and select the discord server you want it to join and authorise it 
+
 ![](https://github.com/siddvish21/assets/blob/main/authorisation_from_link.gif)
 
 After Authorisation it will look like this
