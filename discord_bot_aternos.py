@@ -16,6 +16,9 @@ help_message = "```Available commands:\n" \
                "/serveraddress - Check the address of the Aternos server.```"
 
 
+api = Client.from_credentials(os.getenv('ATERNOS_USERNAME'), os.getenv('ATERNOS_PASSWORD'))
+servers = api.list_servers()
+server = servers[2] #To select a server from a list of servers
 
 @bot.event
 async def on_ready():
@@ -24,22 +27,15 @@ async def on_ready():
 
 @bot.command(name="startserver",description="Starts Minecraft Server")
 async def startserver(ctx: interactions.CommandContext):
-    api = Client.from_credentials(os.getenv('ATERNOS_USERNAME'), os.getenv('ATERNOS_PASSWORD'))
-    servers = api.list_servers()
-    server = servers[2]
-
     if server.status_num == Status.on:
         await ctx.send('Server is already **online**!')
-    elif server.status_num == Status.off:
+    else:
         await ctx.send('Starting Aternos server. Please wait patiently...')
         server.start()
     
 
 @bot.command(name="serverstatus",description="Status of Minecraft Server")
 async def serverstatus(ctx: interactions.CommandContext):
-    api = Client.from_credentials(os.getenv('ATERNOS_USERNAME'), os.getenv('ATERNOS_PASSWORD'))
-    servers = api.list_servers()
-    server = servers[2]
     
     status_msg = {
             Status.on: 'Server is online!',
@@ -53,19 +49,11 @@ async def serverstatus(ctx: interactions.CommandContext):
 
 @bot.command(name="playercount",description="Number of players playing in Minecraft Server")
 async def playercount(ctx: interactions.CommandContext):
-    api = Client.from_credentials(os.getenv('ATERNOS_USERNAME'), os.getenv('ATERNOS_PASSWORD'))
-    servers = api.list_servers()
-    server = servers[2]
-    
     await ctx.send(server.players_count)
 
 
 @bot.command(name="playerlist",description="List of players playing in minecraft server")
 async def playerlist(ctx: interactions.CommandContext):
-    api = Client.from_credentials(os.getenv('ATERNOS_USERNAME'), os.getenv('ATERNOS_PASSWORD'))
-    servers = api.list_servers()
-    server = servers[2]
-    
     if server.status_num == Status.off:
         await ctx.send('```The server is currently offline```')
     else:
