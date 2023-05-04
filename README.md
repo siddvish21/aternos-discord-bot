@@ -9,8 +9,9 @@ More Details : https://aternos.org/:en/
 2. Install the required libraries using `pip install -r requirements.txt`.
 3. Create a Discord bot and get the bot token from the Discord Developer Portal.
 4. Enable messages in privileged intents for your bot.
-5. Fill in your Aternos credentials in the env file in the ATERNOS_USERNAME and ATERNOS_PASSWORD fields
-6. Start the bot using `python bot.py`.
+5. Copy the `.env.sample` file and paste as `.env` to do modification.\
+6. Fill in your Aternos credentials in the env file in the ATERNOS_USERNAME and ATERNOS_PASSWORD fields
+7. Start the bot using `python discord_bot.py`.
 
 First Start by creating an aternos account or login to an existing one
 
@@ -52,12 +53,12 @@ This is the Demonstration of the bot starting the server
 
 ### Commands
 
-- `!startserver`: Starts the Aternos server.
-- `!serverstatus`: Gets the status of the Aternos server (online, offline, starting).
-- `!playercount`: Gets the number of players online on the Aternos server.
-- `!playerlist`: Gets the list of players online on the Aternos server.
-- `!serveraddress`: Gets the address of the Aternos server.
-- `!help`:Shows list of all available commands
+- `/startserver`: Starts the Aternos server.
+- `/serverstatus`: Gets the status of the Aternos server (online, offline, starting).
+- `/playercount`: Gets the number of players online on the Aternos server.
+- `/playerlist`: Gets the list of players online on the Aternos server.
+- `/serveraddress`: Gets the address of the Aternos server.
+- `/help`:Shows list of all available commands
 
 ### Notes
 
